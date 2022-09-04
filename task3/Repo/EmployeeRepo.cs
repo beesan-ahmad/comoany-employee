@@ -20,11 +20,11 @@ namespace task3.Repo
 
         List<Employee> employees { get; set; } = new List<Employee>()
             {
-                new Employee() { Id = 1, Name = "Beesan",Age = 25, companyId = 1},
-                new Employee() { Id = 2, Name = "Emran",Age = 21, companyId = 2 },
-                new Employee() { Id = 3, Name = "sara",Age = 30, companyId = 1},
-                new Employee() { Id = 4, Name = "Ali",Age = 35, companyId = 3},
-                new Employee() { Id = 5, Name = "Deema",Age = 35, companyId = 4}
+                new Employee() { Id = 1, Name = "Beesan",Age = 25, CompanyID = 1},
+                new Employee() { Id = 2, Name = "Emran",Age = 21, CompanyID = 2 },
+                new Employee() { Id = 3, Name = "sara",Age = 30, CompanyID = 1},
+                new Employee() { Id = 4, Name = "Ali",Age = 35, CompanyID = 3},
+                new Employee() { Id = 5, Name = "Deema",Age = 35, CompanyID = 4}
     };
         //EmployeeRepo()
         //{

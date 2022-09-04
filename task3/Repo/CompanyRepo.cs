@@ -20,10 +20,10 @@ namespace task3.Repo
 
         List<Company> companies { get; set; } = new List<Company>()
             {
-                new Company() { companyId = 1, Name = "iConnect", Location ="Holanda-Street"},
-                new Company() { companyId = 2, Name = "Exalt",Location ="Ramallah" },
-                new Company() { companyId = 3, Name = "Soft Uni",Location ="Hebron" },
-                new Company() { companyId = 4, Name = "Paltel",Location ="Bethlehem" }
+                new Company() { CompanyID = 1, Name = "iConnect", Location ="Holanda-Street"},
+                new Company() { CompanyID = 2, Name = "Exalt",Location ="Ramallah" },
+                new Company() { CompanyID = 3, Name = "Soft Uni",Location ="Hebron" },
+                new Company() { CompanyID = 4, Name = "Paltel",Location ="Bethlehem" }
         };
         //CompanyRepo()
         //{
@@ -41,7 +41,7 @@ namespace task3.Repo
         }
         public Company Get(int id)
         {
-            return companies.FirstOrDefault(company => company.companyId == id);
+            return companies.FirstOrDefault(company => company.CompanyID == id);
         }
         public bool delete(int id)
         {
@@ -59,7 +59,7 @@ namespace task3.Repo
 
         public Company update(Company company)
         {
-            var index = companies.FindIndex(e => e.companyId == company.companyId);
+            var index = companies.FindIndex(e => e.CompanyID == company.CompanyID);
             if (index == -1)
 
                 companies[index] = company;
